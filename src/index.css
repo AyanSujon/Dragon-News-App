@@ -16,3 +16,8 @@
 *{
     font-family: "Poppins", sans-serif;
 }
+
+
+main aside .active{
+  @apply bg-base-300 ;
+}
