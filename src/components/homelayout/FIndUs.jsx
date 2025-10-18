@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+
 
 const FIndUs = () => {
     return (
@@ -7,9 +9,9 @@ const FIndUs = () => {
 
             <div>
                 <div className="join join-vertical w-full">
-                <button className="btn bg-base-100 justify-start join-item">Twitter(X)</button>
-                <button className="btn bg-base-100 justify-start join-item">Facebook</button>
-                <button className="btn bg-base-100 justify-start join-item">Instagram</button>
+                <button className="btn bg-base-100 justify-start join-item"><FaFacebookF className='text-[#1877F2]'/> Facebook</button>
+                <button className="btn bg-base-100 justify-start join-item"><FaTwitter className='text-[#1da1f2]'/> Twitter(X)</button>
+                <button className="btn bg-base-100 justify-start join-item"> <FaInstagram className='text-[#C13584]'/> Instagram</button>
                 </div>
             </div>
         </div>
