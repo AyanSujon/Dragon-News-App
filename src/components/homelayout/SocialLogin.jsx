@@ -9,7 +9,6 @@ const SocialLogin = () => {
            <div className='space-y-5'>
             <button className='btn w-full btn-outline btn-secondary'> <FcGoogle size={24}/>Login with Google</button>
             <button className='btn w-full btn-outline btn-primary'> <SiGithub size={24}/> Login with GitHub</button>
-            <button>Login with GitHub</button>
            </div>
 
         </div>
