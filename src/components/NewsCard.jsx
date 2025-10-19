@@ -2,7 +2,7 @@ import { FaEye, FaStar, FaRegStar, FaShareAlt, FaRegBookmark } from "react-icons
 import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
-const { title, author, thumbnail_url, details, rating, total_view, tags, } = news;
+const { id, title, author, thumbnail_url, details, rating, total_view, tags, } = news;
 
   // Format date
   const date = new Date(author.published_date).toLocaleDateString("en-US", {
@@ -46,7 +46,7 @@ const { title, author, thumbnail_url, details, rating, total_view, tags, } = new
 
       {/* Title */}
       <div className="px-5 py-3">
-        <Link to={"/newsDetails"} className="text-primary font-semibold text-lg leading-snug hover:underline hover:transition">{title}</Link>
+        <Link  to={`/news-details/${id}`} className="text-primary font-semibold text-lg leading-snug hover:underline hover:transition">{title}</Link>
       </div>
 
       {/* Thumbnail */}
@@ -64,9 +64,11 @@ const { title, author, thumbnail_url, details, rating, total_view, tags, } = new
           {details.length > 250 ? `${details.slice(0, 250)}...` : details}
         </p>
         {details.length > 250 && (
-          <span className=" text-secondary font-semebold hover:underline cursor-pointer">
+          <Link 
+          to={`/news-details/${id}`}
+           className=" text-secondary font-semebold hover:underline cursor-pointer">
             Read More
-          </span>
+          </Link>
         )}
       </div>
       {/* Divider */}
