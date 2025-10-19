@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 const NewsDetailsCard = ({news}) => {
 const {details, title, image_url, category_id} =news;
-    console.log(news)
+    // console.log(news);
     return (
         <div className='space-y-5'>
             <figure className='w-full'>
