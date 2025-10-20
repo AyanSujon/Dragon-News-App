@@ -6,7 +6,7 @@ const Login = () => {
     const [error, setError]= useState("");
     const {singnIn} = use(AuthContext);
     const location = useLocation();
-    console.log(location);
+    // console.log(location);
     const navigate = useNavigate();
 
 
@@ -16,11 +16,11 @@ const Login = () => {
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log({email , password})
+        // console.log({email , password});
         singnIn(email, password)
         .then(result =>{
             const user = result.user; 
-            console.log(user);
+            // console.log(user);
             navigate(`${location.state? location.state: "/"}`);
         })
         .catch((error) => {
