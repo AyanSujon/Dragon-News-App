@@ -9,7 +9,7 @@ const categoryPromise = fetch("../categories.json").then( res => res.json());
 const Categories = () => {
     // console.log(categoryPromise);
     const categories = use(categoryPromise);
-    console.log(categories);
+    // console.log(categories);
 
 
 
